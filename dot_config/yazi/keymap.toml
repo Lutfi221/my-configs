@@ -322,3 +322,11 @@ keymap = [
 	# Filtering
 	{ on = "/", run = "filter", desc = "Apply a filter for the help items" },
 ]
+
+# Plugins
+
+[[manager.prepend_keymap]]
+on   = [ "c", "a" ]
+run  = "plugin compress"
+desc = "Archive selected files"
+

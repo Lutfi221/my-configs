@@ -25,6 +25,6 @@ return {
 	-- font = wezterm.font("CaskaydiaMono Nerd Font Mono"),
 	font = wezterm.font("Hack Nerd Font Mono"),
 	use_fancy_tab_bar = true,
-	window_background_opacity = 0.8,
+	window_background_opacity = 0.7,
 	window_decorations = "INTEGRATED_BUTTONS|RESIZE",
 }

@@ -143,3 +143,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Copy current working directory to clipboard
+alias cpwd='pwd | wl-copy'
+
