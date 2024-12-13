@@ -147,3 +147,6 @@ esac
 # Copy current working directory to clipboard
 alias cpwd='pwd | wl-copy'
 
+alias lg='lazygit'
+alias sd='sudo docker'
+alias sld='sudo lazydocker'
