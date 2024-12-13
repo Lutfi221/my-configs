@@ -1,0 +1,17 @@
+# https://docs.rs/chrono/latest/chrono/format/strftime/index.html
+matches:
+  - trigger: "Qdt"
+    replace: "{{curent_datetime}}"
+    vars:
+      - name: curent_datetime
+        type: date
+        params:
+          format: "%Y%m%d %H%M%S"
+
+  - trigger: "Qdd"
+    replace: "{{current_date}}"
+    vars:
+      - name: current_date
+        type: date
+        params:
+          format: "%Y%m%d"

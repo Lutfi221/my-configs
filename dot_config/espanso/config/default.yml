@@ -1,0 +1,21 @@
+# espanso configuration file
+
+# toggle_key: ALT
+# toggle_key: OFF
+
+# By default, espanso uses the "Auto" backend which should work well in most cases,
+# but you may want to try the "Clipboard" or "Inject" backend in case of issues.
+# backend: Clipboard
+
+# auto_restart: false
+
+# clipboard_threshold: 100
+
+# For a list of all the available options, visit the official docs at: https://espanso.org/docs/
+
+search_shortcut: off
+
+search_trigger: "Qs"
+
+key_delay: 5
+inject_delay: 5
