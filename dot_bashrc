@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -66,7 +66,7 @@ unset color_prompt force_color_prompt
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\w\a\]$PS1"
     ;;
 *)
     ;;
@@ -144,9 +144,14 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# https://github.com/winapps-org/winapps/blob/main/docs/libvirt.md
+export LIBVIRT_DEFAULT_URI="qemu:///system"
+
 # Copy current working directory to clipboard
 alias cpwd='pwd | wl-copy'
 
 alias lg='lazygit'
 alias sd='sudo docker'
 alias sld='sudo lazydocker'
+
+alias cursor='~/Programs/cursor-0.44.5-build-241220s3ux0e1tv-x86_64.AppImage'

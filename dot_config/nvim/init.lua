@@ -197,6 +197,12 @@ vim.keymap.set("", "<leader>w", function()
 end)
 vim.api.nvim_set_keymap("v", "<C-v>", "<C-v>", { noremap = true, silent = true })
 
+-- Map \ to yank to the system clipboard
+vim.keymap.set('v', '\\', '"+y', { noremap = true, silent = true, desc = 'Yank to system clipboard' })
+
+-- Map | to paste from the system clipboard
+vim.keymap.set('n', '|', '"+p', { noremap = true, silent = true, desc = 'Paste from system clipboard' })
+
 if not vim.fn.has('macunix') then
   vim.opt.backupdir = vim.env.HOME .. "\\AppData\\Local\\nvim-data\\backup\\\\"
   vim.opt.backup = true
