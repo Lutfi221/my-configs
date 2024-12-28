@@ -7,3 +7,15 @@ edit = [
 	{ run = 'code -w %*', block = true,  desc = "code (block)",   for = "windows" },
 ]
 
+[open]
+prepend_rules = [
+	{ mime = "text/*", use = [ "edit", "open", "reveal" ] },
+]
+
+[[plugin.prepend_preloaders]]
+name = "/home/lutfi/drives/lutfi221/**"
+run  = "noop"
+
+[[plugin.prepend_previewers]]
+name = "/home/lutfi/drives/lutfi221/**"
+run  = "noop"

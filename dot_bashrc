@@ -154,4 +154,4 @@ alias lg='lazygit'
 alias sd='sudo docker'
 alias sld='sudo lazydocker'
 
-alias cursor='~/Programs/cursor-0.44.5-build-241220s3ux0e1tv-x86_64.AppImage'
+alias cursor='~/Programs/cursor-0.44.8-build-241222ooktny8mh-x86_64.AppImage'

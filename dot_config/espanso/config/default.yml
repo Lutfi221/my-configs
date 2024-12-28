@@ -13,7 +13,9 @@
 
 # For a list of all the available options, visit the official docs at: https://espanso.org/docs/
 
-search_shortcut: off
+show_notifications: false
+
+search_shortcut: ALT+SHIFT+SPACE
 
 search_trigger: "Qs"
 
