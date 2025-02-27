@@ -144,6 +144,16 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# Texlive start
+PATH=/home/lutfi/neodata/resources/apps/texlive/bin/x86_64-linux:$PATH; export PATH 
+MANPATH=/home/lutfi/neodata/resources/apps/texlive/texmf-dist/doc/man:$MANPATH; export MANPATH 
+INFOPATH=/home/lutfi/neodata/resources/apps/texlive/texmf-dist/doc/info:$INFOPATH; export INFOPATH
+# Texlive end
+
+# Go start
+export PATH=$PATH:/usr/local/go/bin
+# Go end
+
 # https://github.com/winapps-org/winapps/blob/main/docs/libvirt.md
 export LIBVIRT_DEFAULT_URI="qemu:///system"
 
@@ -154,4 +164,5 @@ alias lg='lazygit'
 alias sd='sudo docker'
 alias sld='sudo lazydocker'
 
-alias cursor='~/Programs/cursor-0.44.8-build-241222ooktny8mh-x86_64.AppImage'
+alias cursor='~/Programs/cursor.AppImage'
+. "$HOME/.cargo/env"
