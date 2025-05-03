@@ -25,7 +25,8 @@ local keys = {
 	-- tabs --
 	-- tabs: spawn+close
 	{ key = "t", mods = mod.SUPER, action = act.SpawnTab("DefaultDomain") },
-	{ key = "w", mods = mod.SUPER_REV, action = act.CloseCurrentTab({ confirm = false }) },
+	{ key = "w", mods = mod.SUPER_REV, action = act.CloseCurrentPane({ confirm = false }) },
+	{ key = "w", mods = "CTRL", action = act.CloseCurrentPane({ confirm = false }) },
 
 	-- tabs: navigation
 	{ key = "[", mods = mod.SUPER, action = act.ActivateTabRelative(-1) },
@@ -53,6 +54,7 @@ local keys = {
 	-- panes: zoom+close pane
 	{ key = "Enter", mods = mod.SUPER, action = act.TogglePaneZoomState },
 	{ key = "w", mods = mod.SUPER, action = act.CloseCurrentPane({ confirm = false }) },
+	{ key = "w", mods = "CTRL", action = act.CloseCurrentPane({ confirm = false }) },
 
 	-- panes: navigation
 	{ key = "k", mods = mod.SUPER_REV, action = act.ActivatePaneDirection("Up") },
